@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+body{
+    background-image: url("main.svg");
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.order{
+    width: 28%;
+    height: 80vh;
+    text-align: center;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.image{
+    display: inline-block;
+    width: 100%;
+}
+.image img{
+    width: 100%;
+}
+.order-footer{
+    background-color: white;
+    margin-top: -4px;
+}
+.order-summary{
+    padding: 20px;
+    font-weight: bolder;
+    font-size: x-large;
+}
+.order-description{
+    display: inline-block;
+    /* padding: 10px; */
+    margin-left: 15px;
+    margin-right: 15px;
+    font-weight: 200;
+    padding-bottom: 20px;
+}
+.subscription{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 10px 30px;
+    margin: 0px 30px;
+    border-radius: 5%;
+}
+.annual{
+    padding-right: 5px;
+    padding-left: 0%;
+    font-weight: bold;
+}
+.icon{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: -85px;
+    padding-left: -100px;
+}
+.icon img{
+    display: inline;
+    margin-left: 0px;
+}
+.plan{
+    display: block;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 800;
+    padding-left: 20px;
+}
+.money{
+    display: block;
+    padding-left: 6px;
+    margin-left: 1px;
+    font-weight: 5;
+}
+.change{
+    text-decoration: underline;
+    font-weight: 700;
+    margin-left: 15px;
+    padding-left: 35px;
+    padding-right: -10px;
+    margin-right: -80px;
+}
+.payment{
+    padding: 1rem 0;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.button{
+    display: block;
+    background-color: rgb(54, 54, 225);
+    border:none;
+    text-align: center;
+    font-weight: 550;
+    color: white;
+    font-size: large;
+    padding: 10px 8px;
+    border-radius: 5px;
+    margin: 10px 8px;
+    text-decoration: none;
+}
+.cancellation{
+    font-size: 15px;
+    padding: -5px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 600;
+    padding-bottom: 100px;
+    color: rgb(115, 115, 120);
+}
+.button:hover ~ .body{
+    filter: blur(10);
+}
+.button:hover{
+    box-shadow: 0 25px 60px rgba(0,0,0,0.8);
+}
+@media (max-width:1200px) {
+    .order{
+        width: 38%;
+    }
+}
+@media (max-width:1000px) {
+    .order{
+        width: 45%;
+    }
+}
+@media (max-width:800px) {
+    .order{
+        width: 50%;
+    }
+}
+@media (max-width:750px) {
+    .order{
+        width: 60%;
+    }
+}
+@media (max-width:600px) {
+    .order{
+        width: 80%;
+    }
+}
+@media (max-width:480px) {
+    .order{
+        width: 98%;
+    }
+    .subscription{
+        width: 98%;
+        margin: auto;
+    }
+    @media(max-height:620px) {
+        .order{
+            height: 95%;
+        }
+    }
+    @media(max-height:550px) {
+        .order{
+            height: 95%;
+        }
+    }
+
+}
