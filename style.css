@@ -36,7 +36,6 @@ body{
 .order-summary{
     padding: 20px;
     font-weight: bolder;
-    font-size: x-large;
 }
 .order-description{
     display: inline-block;
